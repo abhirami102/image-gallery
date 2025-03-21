@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        
+        <div class="gallery-controls">
+            <button id="prevBtn" class="nav-btn">Previous</button>
+            <button id="nextBtn" class="nav-btn">Next</button>
+            <div class="filter-controls">
+                <select id="filterSelect">
+                    <option value="all">All Images</option>
+                    <option value="nature">Nature</option>
+                    <option value="city">City</option>
+                    <option value="animals">Animals</option>
+                </select>
+                <input type="range" id="brightnessSlider" min="0" max="200" value="100">
+            </div>
+        </div>
+
+        <div class="gallery-container">
+            <div id="imageGallery" class="image-gallery"></div>
+        </div>
+
+        <div class="modal" id="imageModal">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="Enlarged image">
+            <div class="modal-caption"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
